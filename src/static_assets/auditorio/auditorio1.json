@@ -1,0 +1,134 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"auditorio",
+	"scenes":[
+		{
+			"id":"auditorio",
+			"photopanos":[
+				{"src":"auditorio.jpg","rotateY":180}
+			],
+			"navs":[
+				{"to":"embarcadero","txt":"Embarcadero","rotateY":260,"rotateZ":-180,"iconTranslateX": -3,"iconTranslateY": 1,"iconTranslateZ":-10,"icon":"loco.png","iconWidth":3.5,"iconHeight":3.5},
+				{"to":"Patio","txt":"Patio","rotateY":90,"rotateZ":-190,"iconTranslateX": -3.1,"iconTranslateY": 1.5,"iconTranslateZ":-10,"icon":"loco.png","iconWidth":3.5,"iconHeight":3.5},
+				{"to":"dos","txt":"Patio","rotateY":90,"rotateZ":120,"iconTranslateX":2.5,"iconTranslateY": 1.5,"iconTranslateZ":-10,"icon":"loco.png","iconWidth":3.5,"iconHeight":3.5}
+				
+			],
+			"infos":[
+				
+				{
+					"card":[
+						{"type":"video","src":"hm-short.mp4","ratio":4.5},
+						{"type":"content","txt":"Profesora Cielo y Profesora Saudy","textColor":"white","fontSize":0.18},
+						{"type":"footer","txt":"Ruta Turistica.","textColor":"white"}
+					],
+					"width":4.6,
+					"backgroundColor":"#00000011",
+					"icon":"icons/video.png",
+					"iconWidth":1.75,
+					"iconHeight":2.5,
+					"rotateY":-178,
+					"iconTranslateZ":-30,
+					"rotateX":0.6
+				}
+			],
+			"preloads":[
+				{"src":"coffee-machine.jpg"},
+				{"src":"1004-fraser-9-low.jpg"}
+			]
+		},
+		{
+			"id":"embarcadero",
+			"photopanos":[
+				{"src":"embarcadero.jpeg","rotateY":320}
+			],
+            "navs":[
+                {"to":"barca","txt":"Barca del Capitan","rotateY":410,"rotateX":2,	"iconTranslateZ":-30,
+                	"nextRotateY":130,
+                	"icon":"icons/white-circle.png","iconWidth":1.5,"iconHeight":1.5
+				}
+            ],
+			"infos":[
+				{
+					"card":[
+						{"type":"video","src":"hm-short.mp4","ratio":1.7},
+						{"type":"content","txt":"A format for more active experiences.","textColor":"white","fontSize":0.18},
+						{"type":"footer","txt":"Video attribution: H&M. A Swedish brand to love! Affordable quality, great attitude, great values.","textColor":"white"}
+					],
+					"width":4.6,
+					"backgroundColor":"#00000011",
+					"icon":"icons/ideas-cinema.png",
+					"iconWidth":0.75,
+					"iconHeight":1.5,
+					"rotateY":305
+				}
+			],
+			"sounds":[
+				{"src":"rio.mp3","volume":1,"rotateY":160}
+			],
+			"videos":[
+				{
+					"src":"fire.mp4","imgWidth":512,"imgHeight":512,"cmWidth":0.259765625,"rotateY":180
+				}
+			],
+			"preloads":[
+				{"src":"1004-fraser-11-low.jpg"}
+			]
+		},
+
+		{
+			"id":"dos",
+			"url":"www.gmail.com",
+			"preloads":[
+				{"src":"1004-fraser-11-low.jpg"}
+			]
+		},
+
+
+
+		{
+			"id":"barca",
+			"photopanos":[
+				{"src":"barca.jpg","rotateY":350}
+			],
+            "infos":[
+                {
+	                "card":[                                        
+                        {"type":"image","src":"garden-table.jpg","ratio":1.9,"borderWidth":0},
+                        {"type":"header","txt":"Time for Code!"},
+                        {"type":"content","txt":"Follow the instructions in the Github ReadMe to add your React VR component to this scene. Easy and fast.","textColor":"#000000","fontSize":0.12},
+						{"type":"content","txt":"I hope you will enjoy LiveTourLab. We built the world's best live tour platform and now we give it away for free as open source, challenging several billion dollar companies. With great love and respect, I invite you to take part in creating this entirely new media format."},
+						{"type":"content","txt":"Please Star & Watch the repo on Github. It matters. And it would mean a great deal to me. Thank you"},
+                        {"type":"footer","txt":"anders@livetourlab.com"},
+                        {"type":"row","buttons":[
+							{"txt":"GitHub","uri":"https://github.com/livetourlab/live-tour-lab"},
+							{"txt":"E-mail","uri":"mailto:anders@livetourlab.com"},
+							{"txt":"Msg","uri":"https://m.me/livetourlab"},
+							{"txt":"Call","uri":"tel:0123456789"}
+                        ]}
+	                ],
+	                "width":3,
+	                "backgroundColor":"#ffffffee",
+	                "rotateY":0,
+	                "rotateX":5
+                }
+            ],
+            "photos":[
+                {"src":"live-tour-lab-logo.png","imgWidth":2048,"imgHeight":311,"cmWidth":0.6,"rotateY":142},
+                {"src":"live-tour-lab-logo.png","imgWidth":2048,"imgHeight":311,"cmWidth":0.6,"rotateY":215},
+                {"src":"live-tour-lab-logo.png","imgWidth":2048,"imgHeight":311,"cmWidth":0.4,"rotateY":10,
+	                "opacity":0.2,"pretransform":[ {"translate": [-110, -10, 100]}, {"rotateY": 91} ] }
+            ],
+			"preloads":[
+				{"src":"garden-table.jpg"}
+			]
+		}
+	]
+}
+
+
+

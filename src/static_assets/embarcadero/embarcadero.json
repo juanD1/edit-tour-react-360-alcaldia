@@ -1,0 +1,152 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"embarcadero",
+	"scenes":[
+		
+		{
+			"id":"embarcadero",
+			"photopanos":[
+				{"src":"embarcadero.jpeg","rotateY":320}
+			],
+            "navs":[
+                {"to":"barca","txt":"Barca del Capitan","rotateY":410,"rotateX":2,	"iconTranslateZ":-30,
+                	"nextRotateY":220,"nextRotateX":45,
+                	"icon":"icons/ir.png","iconWidth":1.5,"iconHeight":1.5
+				}
+				
+            ],
+			"infos":[
+				
+					
+				{
+					"card":[
+						{"type":"image","src":"trilladora.jpg","ratio":1},
+						{"type":"header","txt":"Trilladora Magdalena"},
+						{"type":"content","txt":"Patrimonio arquitectonico del municipio"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la Reública de Giratdot"}
+
+					],
+					"icon":"icons/info.png",
+					"rotateY":350,"rotateX":28,
+					"iconWidth":0.2,
+					"iconHeight":0.2
+				},
+				{
+					"card":[
+						{"type":"video","src":"videorio.mp4","ratio":1.9},
+						{"type":"content","txt":"Navegación por el rio Magdalena","textColor":"red","fontSize":0.18},
+						{"type":"footer","txt":"Ruta turística","textColor":"red"}
+					],
+					"width":4.6,
+					"backgroundColor":"#00000011",
+					"icon":"icons/video.png",
+					"iconWidth":0.5,
+					"iconHeight":0.5,
+					"rotateY":120,
+					"rotateX":2,
+					"rotateZ":80
+
+				},
+				{
+					"card":[
+						{"type":"image","src":"ferreo.jpg","ratio":1},
+						{"type":"header","txt":"Puente Ferreo de Girardot"},
+						{"type":"content","txt":"Fase final de la construcción del puente Ferro. Ingnagurado en 1930"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+
+					],
+					"icon":"icons/info.png",
+					"rotateY":420,"rotateX":15,
+					"iconWidth":0.2,
+					"iconHeight":0.2
+				},
+				{
+					"card":[
+						{"type":"image","src":"embarcadero2.jpg","ratio":1},
+						{"type":"header","txt":"Remodelación  del embarcadero Turístico"},
+						{"type":"content","txt":"El la actulidad totalmente abandonado"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+
+					],
+					"icon":"icons/info.png",
+					"rotateY":200,"rotateX":2,"rotateZ":70,
+					"iconWidth":0.2,
+					"iconHeight":0.2
+				}
+			],
+			"sounds":[
+				{"src":"rio.mp4","volume":20,"rotateY":160}
+			],
+		
+			"preloads":[
+				{"src":"1004-fraser-11-low.jpg"}
+			]
+		},
+
+		{
+			"id":"dos",
+			"url":"www.gmail.com",
+			"preloads":[
+				{"src":"1004-fraser-11-low.jpg"}
+			]
+		},
+
+
+
+		{
+			"id":"barca",
+			"photopanos":[
+				{"src":"barca.jpg"}
+			],
+			"navs":[
+			
+			
+				{"to":"embarcadero","txt":"Salir","rotateY":90,"rotateZ":120,"iconTranslateX":2.5,"iconTranslateY": 1.5,"iconTranslateZ":-10,"icon":"icons/salir.png","iconWidth":2.5,"iconHeight":2.5,"nextRotateY":-530}
+				
+			],
+			"infos":[
+				{
+					"card":[
+						{"type":"video","src":"hm-short.mp4","ratio":1.9},
+						{"type":"content","txt":"A format for more active experiences.","textColor":"white","fontSize":0.18},
+						{"type":"footer","txt":"Video attribution: H&M. A Swedish brand to love! Affordable quality, great attitude, great values.","textColor":"white"}
+					],
+					"width":4.6,
+					"backgroundColor":"#00000011",
+					"icon":"icons/video.png",
+					"iconWidth":0.75,
+					"iconHeight":1.5,
+					"rotateY":295,
+					"rotateX":20
+
+				},
+				{
+					"card":[
+						{"type":"image","src":"embarcadero3.jpg","ratio":1},
+						{"type":"header","txt":"Festival del turismo del Rio"},
+						{"type":"content","txt":"El Festival del turismo se inicia en el año 1969"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+
+					],
+					"icon":"icons/info.png",
+					"rotateY":380,"rotateX":5
+				}
+			],
+           
+			"preloads":[
+				{"src":"garden-table.jpg"}
+			]
+		}
+		
+		
+	]
+}
+
+
+
+

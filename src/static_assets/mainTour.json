@@ -1,0 +1,1484 @@
+{
+  "name": "Ruta Turistica",
+  "defaults": {},
+  "firstSceneId": "auditorio",
+  "scenes": [
+    {
+      "id": "auditorio",
+      "photopanos": [
+        {
+          "src": "./auditorio/auditorio.jpg",
+          "rotateY": 180,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "embarcadero",
+          "txt": "Embarcadero",
+          "fontSize": 0.3,
+          "rotateY": 260,
+          "rotateZ": -180,
+          "iconTranslateX": -3,
+          "iconTranslateY": 1,
+          "iconTranslateZ": -10,
+          "icon": "./icons/nav.png",
+          "iconWidth": 3.5,
+          "iconHeight": 3.5
+        },
+        {
+          "to": "locomotora",
+          "txt": "La Locomotora",
+          "fontSize": 0.3,
+          "rotateY": 90,
+          "rotateZ": -190,
+          "iconTranslateX": -4,
+          "iconTranslateY": 1.5,
+          "iconTranslateZ": -10,
+          "icon": "./icons/nav.png",
+          "iconWidth": 3.5,
+          "iconHeight": 3.5
+        },
+        {
+          "to": "plaza",
+          "txt": "Plaza de mercado",
+          "fontSize": 0.3,
+          "rotateY": 90,
+          "rotateZ": 120,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 1.5,
+          "iconTranslateZ": -10,
+          "icon": "./icons/nav.png",
+          "iconWidth": 3.5,
+          "iconHeight": 3.5
+        },
+        {
+          "to": "mirador_center",
+          "txt": "Mirador",
+          "fontSize": 0.3,
+          "rotateY": 76,
+          "rotateZ": 300,
+          "iconTranslateX": 2.5,
+          "iconTranslateY": 1.5,
+          "iconTranslateZ": -11,
+          "icon": "./icons/nav.png",
+          "iconWidth": 3.5,
+          "iconHeight": 3.5
+        },
+        {
+          "to": "hotelUnion_main_gate",
+          "txt": "Hotel Union",
+          "fontSize": 0.3,
+          "rotateY": 285,
+          "rotateZ": -350,
+          "iconTranslateX": -3,
+          "iconTranslateY": 1,
+          "iconTranslateZ": -10,
+          "icon": "./icons/nav.png",
+          "iconWidth": 3.3,
+          "iconHeight": 3.3
+        }
+      ],
+      "infos": [
+        {
+          "card": [
+            { "type": "video", "src": "hm-short.mp4", "ratio": 4.5 },
+            {
+              "type": "content",
+              "txt": "Profesora Cielo y Profesora Saudy",
+              "textColor": "white",
+              "fontSize": 0.18
+            },
+            { "type": "footer", "txt": "Ruta Turistica.", "textColor": "white" }
+          ],
+          "width": 4.6,
+          "backgroundColor": "#00000011",
+          "icon": "icons/video.png",
+          "iconWidth": 1.75,
+          "iconHeight": 2.5,
+          "rotateY": -178,
+          "iconTranslateZ": -30,
+          "rotateX": 0.6
+        }
+      ]
+    },
+    {
+      "id": "embarcadero",
+      "photopanos": [
+        {
+          "src": "embarcadero/embarcadero.jpeg",
+          "rotateY": 320
+        }
+      ],
+      "navs": [
+        {
+          "to": "barca",
+          "txt": "Barca del Capitan",
+          "fontSize": 0.3,
+          "rotateY": 410,
+          "rotateX": 2,
+          "iconTranslateZ": -30,
+          "nextRotateY": 220,
+          "nextRotateX": 45,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5
+        },
+        {
+          "to": "auditorio",
+          "txt": "Galeria",
+          "fontSize": 0.3,
+          "rotateY": 290,
+          "iconTranslateY": 2,
+          "iconTranslateZ": -10,
+          "icon": "icons/salir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5
+        }
+      ],
+      "infos": [
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "embarcadero/infos/trilladora.jpg",
+              "ratio": 1
+            },
+            { "type": "header", "txt": "Trilladora Magdalena" },
+            {
+              "type": "content",
+              "txt": "Patrimonio arquitectonico del municipio"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la Reública de Giratdot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 350,
+          "rotateX": 28,
+          "iconWidth": 0.2,
+          "iconHeight": 0.2
+        },
+        {
+          "card": [
+            {
+              "type": "video",
+              "src": "embarcadero/infos/videorio.mp4",
+              "ratio": 1.9
+            },
+            {
+              "type": "content",
+              "txt": "Navegación por el rio Magdalena",
+              "textColor": "red",
+              "fontSize": 0.18
+            },
+            { "type": "footer", "txt": "Ruta turística", "textColor": "red" }
+          ],
+          "width": 4.6,
+          "backgroundColor": "#00000011",
+          "icon": "icons/video.png",
+          "iconWidth": 0.5,
+          "iconHeight": 0.5,
+          "rotateY": 120,
+          "rotateX": 2,
+          "rotateZ": 80
+        },
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "embarcadero/infos/ferreo.jpg",
+              "ratio": 1
+            },
+            { "type": "header", "txt": "Puente Ferreo de Girardot" },
+            {
+              "type": "content",
+              "txt": "Fase final de la construcción del puente Ferro. Ingnagurado en 1930"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 420,
+          "rotateX": 15,
+          "iconWidth": 0.2,
+          "iconHeight": 0.2
+        },
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "embarcadero/infos/embarcadero2.jpg",
+              "ratio": 1
+            },
+            {
+              "type": "header",
+              "txt": "Remodelación  del embarcadero Turístico"
+            },
+            {
+              "type": "content",
+              "txt": "El la actulidad totalmente abandonado"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 200,
+          "rotateX": 2,
+          "rotateZ": 70,
+          "iconWidth": 0.2,
+          "iconHeight": 0.2
+        }
+      ],
+      "sounds": [
+        {
+          "src": "embarcadero/sounds/rio.mp3",
+          "volume": 20,
+          "rotateY": 160
+        }
+      ]
+    },
+    {
+      "id": "barca",
+      "photopanos": [
+        {
+          "src": "barca/barca.jpg"
+        }
+      ],
+      "navs": [
+        {
+          "to": "embarcadero",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": 90,
+          "rotateZ": 120,
+          "iconTranslateX": 2.5,
+          "iconTranslateY": 1.5,
+          "iconTranslateZ": -10,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ],
+      "infos": [
+        {
+          "card": [
+            { "type": "video", "src": "hm-short.mp4", "ratio": 1.9 },
+            {
+              "type": "content",
+              "txt": "A format for more active experiences.",
+              "textColor": "white",
+              "fontSize": 0.18
+            },
+            {
+              "type": "footer",
+              "txt": "Video attribution: H&M. A Swedish brand to love! Affordable quality, great attitude, great values.",
+              "textColor": "white"
+            }
+          ],
+          "width": 4.6,
+          "backgroundColor": "#00000011",
+          "icon": "icons/video.png",
+          "iconWidth": 0.75,
+          "iconHeight": 1.5,
+          "rotateY": 295,
+          "rotateX": 20
+        },
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "barca/infos/embarcadero3.jpg",
+              "ratio": 1
+            },
+            { "type": "header", "txt": "Festival del turismo del Rio" },
+            {
+              "type": "content",
+              "txt": "El Festival del turismo se inicia en el año 1969"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 380,
+          "rotateX": 5
+        }
+      ]
+    },
+    {
+      "id": "locomotora",
+      "photopanos": [
+        {
+          "src": "locomotora/loco1.JPG",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "auditorio",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": -15,
+          "rotateZ": 20,
+          "iconTranslateX": 2.5,
+          "iconTranslateY": 1.5,
+          "iconTranslateZ": -20,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "estacion",
+          "txt": "Estación del tren",
+          "fontSize": 0.5,
+          "rotateY": 387,
+          "rotateX": 7,
+          "iconTranslateZ": -30,
+          "nextRotateY": 220,
+          "nextRotateX": 45,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5
+        },
+        {
+          "to": "cultureHome_exterior_gate",
+          "txt": "Casa de la cultura",
+          "fontSize": 0.5,
+          "rotateY": 395,
+          "rotateX": 7,
+          "iconTranslateZ": -30,
+          "nextRotateY": 220,
+          "nextRotateX": 45,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5
+        }
+      ],
+      "infos": [
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "locomotora/infos/ferro4.jpg",
+              "ratio": 1
+            },
+            {
+              "type": "header",
+              "txt": "Empleados de los ferrocarriles Nacionales"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 380,
+          "rotateX": 5,
+          "rotateZ": 90
+        }
+      ]
+    },
+    {
+      "id": "estacion",
+      "photopanos": [
+        {
+          "src": "estacion/estacionprin.JPG",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "auditorio",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": -60,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 0.5,
+          "iconTranslateZ": -30,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ],
+      "infos": [
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "estacion/infos/estacion.jpg",
+              "ratio": 1
+            },
+            { "type": "header", "txt": "Pasajeros abordando el tren" },
+            {
+              "type": "content",
+              "txt": "Se observa la magnitud de la cantidad de viajeros"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 120,
+          "rotateX": 3,
+          "rotateZ": 250
+        },
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "estacion/infos/estacion2.jpg",
+              "ratio": 1
+            },
+            { "type": "header", "txt": "Antigua estación del tren" },
+            {
+              "type": "content",
+              "txt": "Aledaño a esta se encontraba los talleres"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": -155,
+          "rotateX": 2,
+          "rotateZ": 90
+        },
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "estacion/infos/ignaguracion.jpg",
+              "ratio": 1
+            },
+            { "type": "header", "txt": "inauguracion" },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/ignaguracion.png",
+          "rotateY": -108,
+          "rotateX": 2,
+          "rotateZ": 100
+        }
+      ]
+    },
+    {
+      "id": "cultureHome_exterior_gate",
+      "photopanos": [
+        {
+          "src": "casaCultura/1.CasaCultura_pasillo_exterior.jpg",
+          "rotateY": 100,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "cultureHome_exterior_room",
+          "txt": "Salon",
+          "fontSize": 0.3,
+          "rotateY": -55,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 0.5,
+          "iconHeight": 0.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "auditorio",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": -100,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 0.5,
+          "iconTranslateZ": -30,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "cultureHome_exterior_room",
+      "photopanos": [
+        {
+          "src": "casaCultura/2.CasaCultura_salon_exterior.jpg",
+          "rotateY": 20,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "cultureHome_second_floor",
+          "txt": "Ir al segundo piso",
+          "fontSize": 0.3,
+          "rotateY": 100,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "cultureHome_exterior_gate",
+          "txt": "Volver",
+          "fontSize": 0.3,
+          "rotateY": 170,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "cultureHome_second_floor",
+      "photopanos": [
+        {
+          "src": "casaCultura/3.CasaCultura_piso2.jpg",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "cultureHome_exterior_gate",
+          "txt": "Pasillo exterior",
+          "fontSize": 0.3,
+          "rotateY": 130,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "cultureHome_principal_office",
+          "txt": "Oficina principal",
+          "fontSize": 0.3,
+          "rotateY": 150,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "cultureHome_principal_room",
+          "txt": "Salon Principal",
+          "fontSize": 0.3,
+          "rotateY": -50,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "cultureHome_principal_office",
+      "photopanos": [
+        {
+          "src": "casaCultura/4.CasaCultura_piso2_officina.jpg",
+          "rotateY": 50,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "cultureHome_principal_room",
+          "txt": "Salon principal",
+          "fontSize": 0.3,
+          "rotateY": 125,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "cultureHome_exterior_gate",
+          "txt": "Volver",
+          "fontSize": 0.3,
+          "rotateY": 140,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "cultureHome_principal_room",
+      "photopanos": [
+        {
+          "src": "casaCultura/5.CasaCultura_piso2_salon_principal.jpg",
+          "rotateY": 50,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "cultureHome_second_floor",
+          "txt": "Pasillo piso 2",
+          "fontSize": 0.3,
+          "rotateY": -35,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "plaza",
+      "photopanos": [
+        {
+          "src": "plaza/plazaprin.JPG",
+          "rotateY": 100,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "plaza_left",
+          "txt": "Conocer más...",
+          "fontSize": 0.3,
+          "rotateY": -80,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 0.5,
+          "iconHeight": 0.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "plaza_right",
+          "txt": "Conocer más...",
+          "fontSize": 0.3,
+          "rotateY": 200,
+          "rotateZ": 20,
+          "iconTranslateX": 1.0,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "iglesia_main",
+          "txt": "Iglesia San Miguel",
+          "fontSize": 0.3,
+          "rotateY": 100,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/iglesiaicon.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "auditorio",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": -60,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 0.5,
+          "iconTranslateZ": -30,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ],
+      "infos": [
+        {
+          "card": [
+            { "type": "image", "src": "plaza/infos/plaza.jpg", "ratio": 1 },
+            { "type": "header", "txt": "Antigua plaza de mercado" },
+            { "type": "content", "txt": "Se observa la plaza en sus inicios" },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 120,
+          "rotateX": 3,
+          "rotateZ": 250
+        },
+        {
+          "card": [
+            { "type": "image", "src": "plaza/infos/plaza2.jpg", "ratio": 1 },
+            { "type": "header", "txt": "Incendio antigua plaza de mercado" },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": -155,
+          "rotateX": 2,
+          "rotateZ": 90
+        }
+      ]
+    },
+    {
+      "id": "plaza_left",
+      "photopanos": [
+        {
+          "src": "plaza/1.Plaza_escaleras.jpg",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "plaza",
+          "txt": "centro de la plaza",
+          "fontSize": 0.3,
+          "rotateY": 20,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "plaza_right",
+      "photopanos": [
+        {
+          "src": "plaza/2.Plaza_pasillo.jpg",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "plaza",
+          "txt": "centro de la plaza",
+          "fontSize": 0.3,
+          "rotateY": -70,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "iglesia_main",
+      "photopanos": [
+        {
+          "src": "iglesia/sanmiguel3.JPG",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "iglesia_gate",
+          "txt": "Entrar",
+          "fontSize": 0.3,
+          "rotateY": -75,
+          "rotateZ": 20,
+          "iconTranslateX": 1.0,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 0.5,
+          "iconHeight": 0.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "auditorio",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": 160,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ],
+      "infos": [
+        {
+          "card": [
+            { "type": "image", "src": "iglesia/infos/iglesia.jpg", "ratio": 1 },
+            {
+              "type": "header",
+              "txt": "Construcción de la iglesia San Miguel"
+            },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 250,
+          "rotateX": 11,
+          "rotateZ": 90
+        },
+        {
+          "card": [
+            {
+              "type": "image",
+              "src": "iglesia/infos/iglesia1.jpg",
+              "ratio": 1
+            },
+            { "type": "header", "txt": "Iglesia San Miguel, primeros dias" },
+            {
+              "type": "content",
+              "txt": "Fuente: biblioteca banco de la República de Girardot"
+            }
+          ],
+          "icon": "icons/info.png",
+          "rotateY": 200,
+          "rotateX": 11,
+          "rotateZ": 90
+        }
+      ]
+    },
+    {
+      "id": "iglesia_gate",
+      "photopanos": [
+        {
+          "src": "iglesia/1.Iglesia_entrada.jpg",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "iglesia_center",
+          "txt": "centro de la iglesia",
+          "fontSize": 0.3,
+          "rotateY": -155,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "iglesia_main",
+          "txt": "Salir de la iglesia",
+          "fontSize": 0.3,
+          "rotateY": 0,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "iglesia_center",
+      "photopanos": [
+        {
+          "src": "iglesia/2.Iglesia_centro.jpg",
+          "rotateY": -30,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "iglesia_gate",
+          "txt": "puerta de la iglesia",
+          "fontSize": 0.3,
+          "rotateY": -35,
+          "rotateZ": 5,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "mirador_center",
+      "photopanos": [
+        {
+          "src": "mirador/1.Mirador_centro.jpg",
+          "rotateY": -100,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "mirador_river",
+          "txt": "Ver rio Magdalena",
+          "fontSize": 0.3,
+          "rotateY": 100,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "mirador_background",
+          "txt": "Fondo del mirador",
+          "fontSize": 0.3,
+          "rotateY": -150,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "auditorio",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": 10,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 0.5,
+          "iconTranslateZ": -30,
+          "icon": "icons/salir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "mirador_river",
+      "photopanos": [
+        {
+          "src": "mirador/2.Mirador_rio.jpg",
+          "rotateY": -40,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "mirador_center",
+          "txt": "Centro del mirador",
+          "fontSize": 0.3,
+          "rotateY": 150,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "mirador_background",
+          "txt": "Fondo del mirador",
+          "fontSize": 0.3,
+          "rotateY": 100,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "mirador_background",
+      "photopanos": [
+        {
+          "src": "mirador/3.Mirador_fondo.jpg",
+          "rotateY": -70,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "mirador_center",
+          "txt": "Centro del mirador",
+          "fontSize": 0.3,
+          "rotateY": -35,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "mirador_river",
+          "txt": "Ver rio Magdalena",
+          "fontSize": 0.3,
+          "rotateY": 20,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_main_gate",
+      "photopanos": [
+        {
+          "src": "hotelUnion/1.Hotel_resepcion_entrada.jpg",
+          "rotateY": -180,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_waiting_room",
+          "txt": "Sala de espera",
+          "fontSize": 0.3,
+          "rotateY": -30,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_climbing_stairs",
+          "txt": "Ir al segundo piso",
+          "fontSize": 0.3,
+          "rotateY": 30,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "auditorio",
+          "txt": "Salir",
+          "fontSize": 0.3,
+          "rotateY": 195.5,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.5,
+          "iconTranslateZ": -30,
+          "icon": "icons/salir.png",
+          "iconWidth": 2.5,
+          "iconHeight": 2.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_waiting_room",
+      "photopanos": [
+        {
+          "src": "hotelUnion/2.Hotel_sala_espera.jpg",
+          "rotateY": 20,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_climbing_stairs",
+          "txt": "Ir al segundo piso",
+          "fontSize": 0.3,
+          "rotateY": 140,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_main_gate",
+          "txt": "Resepcion",
+          "fontSize": 0.3,
+          "rotateY": 170,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_climbing_stairs",
+      "photopanos": [
+        {
+          "src": "hotelUnion/3.Hotel_escaleras_subiendo.jpg",
+          "rotateY": -70,
+          "TranslateX": 120
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_main_gate",
+          "txt": "Resepcion",
+          "fontSize": 0.3,
+          "rotateY": -130,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 0.2,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_second_floor",
+          "txt": "Segundo piso",
+          "fontSize": 0.3,
+          "rotateY": -55,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 5.5,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_second_floor",
+      "photopanos": [
+        {
+          "src": "hotelUnion/4.Hotel_piso2_escaleras.jpg",
+          "rotateY": -180,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_climbing_stairs",
+          "txt": "Bajar escaleras",
+          "fontSize": 0.3,
+          "rotateY": 135,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": -5.5,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_show_rooms",
+          "txt": "ver pasillos de habitaciones",
+          "fontSize": 0.3,
+          "rotateY": -120,
+          "rotateZ": 20,
+          "iconTranslateX": 0.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -5,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_balcony",
+          "txt": "Balcon",
+          "fontSize": 0.3,
+          "rotateY": -20,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 0.5,
+          "iconTranslateZ": -30,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_show_rooms",
+      "photopanos": [
+        {
+          "src": "hotelUnion/5.Hotel_piso2_centro.jpg",
+          "rotateY": 50,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_climbing_stairs",
+          "txt": "Bajar escaleras",
+          "fontSize": 0.3,
+          "rotateY": 120,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": -1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_room1",
+          "txt": "Habitaciones pasillo 1",
+          "fontSize": 0.3,
+          "rotateY": 90,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_room2",
+          "txt": "Habitaciones pasillo 2",
+          "fontSize": 0.3,
+          "rotateY": -80,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_balcony",
+          "txt": "Balcon",
+          "fontSize": 0.3,
+          "rotateY": 65,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.5,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_room1",
+      "photopanos": [
+        {
+          "src": "hotelUnion/6.Hotel_habitaciones1.jpg",
+          "rotateY": 0,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_show_rooms",
+          "txt": "volver al pasillo del piso 2",
+          "fontSize": 0.3,
+          "rotateY": -10,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_room2",
+      "photopanos": [
+        {
+          "src": "hotelUnion/7.Hotel_habitaciones2.jpg",
+          "rotateY": 10,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_show_rooms",
+          "txt": "volver al pasillo del piso 2",
+          "fontSize": 0.3,
+          "rotateY": 0,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_balcony",
+      "photopanos": [
+        {
+          "src": "hotelUnion/8.Hotel_balcon.jpg",
+          "rotateY": 50,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_second_floor",
+          "txt": "Volver al pasillo",
+          "fontSize": 0.3,
+          "rotateY": -160,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        },
+        {
+          "to": "hotelUnion_pool",
+          "txt": "Piscina",
+          "fontSize": 0.3,
+          "rotateY": 20,
+          "rotateZ": 20,
+          "iconTranslateX": -2.5,
+          "iconTranslateY": -4.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    },
+    {
+      "id": "hotelUnion_pool",
+      "photopanos": [
+        {
+          "src": "hotelUnion/9.Hotel_piscina.jpg",
+          "rotateY": 180,
+          "TranslateX": 30
+        }
+      ],
+      "navs": [
+        {
+          "to": "hotelUnion_main_gate",
+          "txt": "Ir a la resepcion",
+          "fontSize": 0.3,
+          "rotateY": 50,
+          "rotateZ": 20,
+          "iconTranslateX": 1.5,
+          "iconTranslateY": 1.0,
+          "iconTranslateZ": -10,
+          "icon": "icons/ir.png",
+          "iconWidth": 1.5,
+          "iconHeight": 1.5,
+          "nextRotateY": -530
+        }
+      ]
+    }
+  ]
+}

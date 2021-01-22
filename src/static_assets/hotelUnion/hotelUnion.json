@@ -1,0 +1,387 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"hotelUnion_main_gate",
+	"scenes":[
+		{
+			"id":"hotelUnion_main_gate",
+			"photopanos":[
+				{
+					"src":"hotelUnion/1.Hotel_resepcion_entrada.jpg",
+					"rotateY":-180,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_waiting_room",
+					"txt":"Sala de espera",
+					"fontSize": 0.30,
+					"rotateY":-30,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},	
+				{
+					"to":"hotelUnion_climbing_stairs",
+					"txt":"Ir al segundo piso",
+					"fontSize": 0.30,
+					"rotateY":30,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},			
+				{
+					"to":"auditorio",
+					"txt":"Salir",
+					"rotateY":195.5,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.5,
+					"iconTranslateZ":-30,
+					"icon":"icons/salir.png",
+					"iconWidth":2.5,
+					"iconHeight":2.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"hotelUnion_waiting_room",
+			"photopanos":[
+				{
+					"src":"hotelUnion/2.Hotel_sala_espera.jpg",
+					"rotateY":20,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_climbing_stairs",
+					"txt":"Ir al segundo piso",
+					"fontSize": 0.30,
+					"rotateY":140,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"hotelUnion_main_gate",
+					"txt":"Resepcion",
+					"fontSize": 0.30,
+					"rotateY":170,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]
+		},
+		{
+			"id":"hotelUnion_climbing_stairs",
+			"photopanos":[
+				{
+					"src":"hotelUnion/3.Hotel_escaleras_subiendo.jpg",
+					"rotateY":-70,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_main_gate",
+					"txt":"Resepcion",
+					"fontSize": 0.30,
+					"rotateY":-130,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"hotelUnion_second_floor",
+					"txt":"Segundo piso",
+					"fontSize": 0.30,
+					"rotateY":-55,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 5.5,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}				
+			]
+		},
+		{
+			"id":"hotelUnion_second_floor",
+			"photopanos":[
+				{
+					"src":"hotelUnion/4.Hotel_piso2_escaleras.jpg",
+					"rotateY":-180,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_climbing_stairs",
+					"txt":"Bajar escaleras",
+					"fontSize": 0.30,
+					"rotateY":135,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": -5.5,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},	
+				{
+					"to":"hotelUnion_show_rooms",
+					"txt":"ver pasillos de habitaciones",
+					"fontSize": 0.30,
+					"rotateY":-120,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-5,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},			
+				{
+					"to":"hotelUnion_balcony",
+					"txt":"Balcon",
+					"rotateY":-20,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 0.5,
+					"iconTranslateZ":-30,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"hotelUnion_show_rooms",
+			"photopanos":[
+				{
+					"src":"hotelUnion/5.Hotel_piso2_centro.jpg",
+					"rotateY":50,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_climbing_stairs",
+					"txt":"Bajar escaleras",
+					"fontSize": 0.30,
+					"rotateY":120,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": -1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},	
+				{
+					"to":"hotelUnion_room1",
+					"txt":"Habitaciones pasillo 1",
+					"fontSize": 0.30,
+					"rotateY":90,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},	
+				{
+					"to":"hotelUnion_room2",
+					"txt":"Habitaciones pasillo 2",
+					"fontSize": 0.30,
+					"rotateY":-80,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},		
+				{
+					"to":"hotelUnion_balcony",
+					"txt":"Balcon",
+					"fontSize": 0.30,
+					"rotateY":65,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.5,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"hotelUnion_room1",
+			"photopanos":[
+				{
+					"src":"hotelUnion/6.Hotel_habitaciones1.jpg",
+					"rotateY":0,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_show_rooms",
+					"txt":"volver al pasillo del piso 2",
+					"fontSize": 0.30,
+					"rotateY":-10,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"hotelUnion_room2",
+			"photopanos":[
+				{
+					"src":"hotelUnion/7.Hotel_habitaciones2.jpg",
+					"rotateY":10,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_show_rooms",
+					"txt":"volver al pasillo del piso 2",
+					"fontSize": 0.30,
+					"rotateY":0,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"hotelUnion_balcony",
+			"photopanos":[
+				{
+					"src":"hotelUnion/8.Hotel_balcon.jpg",
+					"rotateY":50,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_second_floor",
+					"txt":"Volver al pasillo",
+					"fontSize": 0.30,
+					"rotateY":-160,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"hotelUnion_pool",
+					"txt":"Piscina",
+					"fontSize": 0.30,
+					"rotateY":20,
+					"rotateZ":20,
+					"iconTranslateX":-2.5,
+					"iconTranslateY": -4.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"hotelUnion_pool",
+			"photopanos":[
+				{
+					"src":"hotelUnion/9.Hotel_piscina.jpg",
+					"rotateY":180,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"hotelUnion_main_gate",
+					"txt":"Ir a la resepcion",
+					"fontSize": 0.30,
+					"rotateY":50,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]			
+		}
+	]
+}
+
+
+
+

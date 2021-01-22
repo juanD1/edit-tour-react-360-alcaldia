@@ -1,0 +1,154 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"plaza",
+	"scenes":[
+		{
+			"id":"plaza",
+			"photopanos":[
+				{
+					"src":"plaza/plazaprin.JPG",
+					"rotateY":100,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"plaza_left",
+					"txt":"Conocer más...",
+					"fontSize": 0.30,
+					"rotateY":-80,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":0.5,
+					"iconHeight":0.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"plaza_right",
+					"txt":"Conocer más...",
+					"fontSize": 0.30,
+					"rotateY":200,
+					"rotateZ":20,
+					"iconTranslateX":1.0,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"iglesia_main",
+					"txt":"Iglesia San Miguel",
+					"rotateY":100,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/iglesiaicon.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"auditorio",
+					"txt":"Salir",
+					"rotateY":-60,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 0.5,
+					"iconTranslateZ":-30,
+					"icon":"icons/salir.png",
+					"iconWidth":2.5,
+					"iconHeight":2.5,
+					"nextRotateY":-530
+				}
+			],
+			"infos":[
+				{
+					"card":[
+						{"type":"image","src":"plaza/infos/plaza.jpg","ratio":1},
+						{"type":"header","txt":"Antigua plaza de mercado"},
+						{"type":"content","txt":"Se observa la plaza en sus inicios" },
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+					],
+					"icon":"icons/info.png",
+					"rotateY":120,"rotateX":3,"rotateZ":250
+				},
+				{
+					"card":[
+						{"type":"image","src":"plaza/infos/plaza2.jpg","ratio":1},
+						{"type":"header","txt":"Incendio antigua plaza de mercado"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+					],
+					"icon":"icons/info.png",
+					"rotateY":-155,"rotateX":2,"rotateZ":90
+				}
+			]
+		},
+		{
+			"id":"plaza_left",
+			"photopanos":[
+				{
+					"src":"plaza/1.Plaza_escaleras.jpg",
+					"rotateY":-30,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"plaza",
+					"txt":"centro de la plaza",
+					"fontSize": 0.30,
+					"rotateY":20,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]
+		},
+		{
+			"id":"plaza_right",
+			"photopanos":[
+				{
+					"src":"plaza/2.Plaza_pasillo.jpg",
+					"rotateY":-30,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"plaza",
+					"txt":"centro de la plaza",
+					"fontSize": 0.30,
+					"rotateY":-155,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]
+		}
+	]
+}
+
+
+
+

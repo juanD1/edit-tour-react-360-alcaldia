@@ -1,0 +1,104 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"locomotora",
+	"scenes":[
+		
+		{
+			"id":"locomotora",
+			"photopanos":[
+				{"src":"loco1.JPG","rotateY":-30,"TranslateX":120}
+			],
+			"navs":[
+			
+			
+				
+				{"to":"estacion","txt":"Estación del tren","rotateY":387,"rotateX":7,	"iconTranslateZ":-30,
+                	"nextRotateY":220,"nextRotateX":45,
+                	"icon":"icons/ir.png","iconWidth":1.5,"iconHeight":1.5
+				}
+				
+			],
+			"infos":[
+				
+				{
+					"card":[
+						{"type":"image","src":"ferro4.jpg","ratio":1},
+						{"type":"header","txt":"Empleados de los ferrocarriles Nacionales"},
+						{"type":"content","txt":""},
+						
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+
+					],
+					"icon":"icons/info.png",
+					"rotateY":380,"rotateX":5,"rotateZ":90
+				}
+			],
+           
+			"preloads":[
+				{"src":"garden-table.jpg"}
+			]
+		},
+		{
+			"id":"estacion",
+			"photopanos":[
+				{"src":"estacionprin.JPG","rotateY":-30,"TranslateX":120}
+			],
+			"navs":[
+			
+			
+				{"to":"locomotora","txt":"Salir","rotateY":-60,"rotateZ":20,"iconTranslateX":1.5,"iconTranslateY": 0.5,"iconTranslateZ":-30,"icon":"icons/salir.png","iconWidth":2.5,"iconHeight":2.5,"nextRotateY":-530}
+				
+				
+			],
+			"infos":[
+				
+				{
+					"card":[
+						{"type":"image","src":"estacion.jpg","ratio":1},
+						{"type":"header","txt":"Pasajeros abordando el tren"},
+						{"type":"content","txt":"Se observa la magnitud de la cantidad de viajeros" },
+						
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+
+					],
+					"icon":"icons/info.png",
+					"rotateY":120,"rotateX":3,"rotateZ":250
+				},
+				{
+					"card":[
+						{"type":"image","src":"estacion2.jpg","ratio":1},
+						{"type":"header","txt":"Antigua estación del tren"},
+						{"type":"content","txt":"Aledaño a esta se encontraba los talleres"},
+						
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+
+					],
+					"icon":"icons/info.png",
+					"rotateY":-155,"rotateX":2,"rotateZ":90
+				},
+				{
+					"card":[
+						{"type":"image","src":"ignaguracion.jpg","ratio":1},
+						{"type":"header","txt":"Ignaguracion"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+					],
+					"icon":"icons/ignaguracion.png",
+					"rotateY":-118,"rotateX":3,"rotateZ":90
+				}
+			],
+           
+			"preloads":[
+				{"src":"garden-table.jpg"}
+			]
+		}
+	]
+}
+
+
+
+

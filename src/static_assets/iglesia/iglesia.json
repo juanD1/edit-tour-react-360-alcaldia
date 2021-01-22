@@ -1,0 +1,140 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"iglesia_main",
+	"scenes":[
+		{
+			"id":"iglesia_main",
+			"photopanos":[
+				{
+					"src":"iglesia/sanmiguel3.JPG",
+					"rotateY":-30,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"iglesia_gate",
+					"txt":"Entrar",
+					"fontSize": 0.30,
+					"rotateY":-75,
+					"rotateZ":20,
+					"iconTranslateX":1.0,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":0.5,
+					"iconHeight":0.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"auditorio",
+					"txt":"Salir",
+					"rotateY":160,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/salir.png",
+					"iconWidth":2.5,
+					"iconHeight":2.5,
+					"nextRotateY":-530
+				}
+			],
+			"infos":[
+				{
+					"card":[
+						{"type":"image","src":"iglesia/infos/iglesia.jpg","ratio":1},
+						{"type":"header","txt":"Construcción de la iglesia San Miguel"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+					],
+					"icon":"icons/info.png",
+					"rotateY":250,"rotateX":11,"rotateZ":90
+				},
+				{
+					"card":[
+						{"type":"image","src":"iglesia/infos/iglesia1.jpg","ratio":1},
+						{"type":"header","txt":"Iglesia San Miguel, primeros dias"},
+						{"type":"content","txt":"Fuente: biblioteca banco de la República de Girardot"}
+					],
+					"icon":"icons/info.png",
+					"rotateY":200,"rotateX":11,"rotateZ":90
+				}
+			]
+		},
+		{
+			"id":"iglesia_gate",
+			"photopanos":[
+				{
+					"src":"iglesia/1.Iglesia_entrada.jpg",
+					"rotateY":-30,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"iglesia_center",
+					"txt":"centro de la iglesia",
+					"fontSize": 0.30,
+					"rotateY":-155,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"iglesia_main",
+					"txt":"Salir de la iglesia",
+					"fontSize": 0.30,
+					"rotateY":0,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/salir.png",
+					"iconWidth":2.5,
+					"iconHeight":2.5,
+					"nextRotateY":-530
+				}
+			]
+		},
+		{
+			"id":"iglesia_center",
+			"photopanos":[
+				{
+					"src":"iglesia/2.Iglesia_centro.jpg",
+					"rotateY":-30,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"iglesia_gate",
+					"txt":"puerta de la iglesia",
+					"fontSize": 0.30,
+					"rotateY":-35,
+					"rotateZ":5,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/salir.png",
+					"iconWidth":2.5,
+					"iconHeight":2.5,
+					"nextRotateY":-530
+				}
+			]
+		}		
+	]
+}
+
+
+
+

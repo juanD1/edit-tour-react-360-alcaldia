@@ -1,0 +1,214 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"cultureHome_exterior_gate",
+	"scenes":[
+		{
+			"id":"cultureHome_exterior_gate",
+			"photopanos":[
+				{
+					"src":"casaCultura/1.CasaCultura_pasillo_exterior.jpg",
+					"rotateY":100,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"cultureHome_exterior_room",
+					"txt":"Salon",
+					"fontSize": 0.30,
+					"rotateY":-55,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":0.5,
+					"iconHeight":0.5,
+					"nextRotateY":-530
+				},			
+				{
+					"to":"auditorio",
+					"txt":"Salir",
+					"rotateY":-100,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 0.5,
+					"iconTranslateZ":-30,
+					"icon":"icons/salir.png",
+					"iconWidth":2.5,
+					"iconHeight":2.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"cultureHome_exterior_room",
+			"photopanos":[
+				{
+					"src":"casaCultura/2.CasaCultura_salon_exterior.jpg",
+					"rotateY":20,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"cultureHome_second_floor",
+					"txt":"Ir al segundo piso",
+					"fontSize": 0.30,
+					"rotateY":100,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"cultureHome_exterior_gate",
+					"txt":"Volver",
+					"fontSize": 0.30,
+					"rotateY":170,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]
+		},
+		{
+			"id":"cultureHome_second_floor",
+			"photopanos":[
+				{
+					"src":"casaCultura/3.CasaCultura_piso2.jpg",
+					"rotateY":-30,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"cultureHome_exterior_gate",
+					"txt":"Pasillo exterior",
+					"fontSize": 0.30,
+					"rotateY":130,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"cultureHome_principal_office",
+					"txt":"Oficina principal",
+					"fontSize": 0.30,
+					"rotateY":150,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"cultureHome_principal_room",
+					"txt":"Salon Principal",
+					"fontSize": 0.30,
+					"rotateY":-50,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}				
+			]
+		},
+		{
+			"id":"cultureHome_principal_office",
+			"photopanos":[
+				{
+					"src":"casaCultura/4.CasaCultura_piso2_officina.jpg",
+					"rotateY":50,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"cultureHome_principal_room",
+					"txt":"Salon principal",
+					"fontSize": 0.30,
+					"rotateY":125,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"cultureHome_exterior_gate",
+					"txt":"Volver",
+					"fontSize": 0.30,
+					"rotateY":140,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}						
+			]
+		},
+		{
+			"id":"cultureHome_principal_room",
+			"photopanos":[
+				{
+					"src":"casaCultura/5.CasaCultura_piso2_salon_principal.jpg",
+					"rotateY":50,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"cultureHome_second_floor",
+					"txt":"Pasillo piso 2",
+					"fontSize": 0.30,
+					"rotateY":-35,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}				
+			]
+		}
+	]
+}
+
+
+
+

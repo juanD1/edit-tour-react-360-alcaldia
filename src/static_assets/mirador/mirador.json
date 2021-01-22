@@ -1,0 +1,148 @@
+{
+	"name":"Ruta Turistica de Girardot",
+	"defaults":{
+		"infos":{
+			"icon":"icons/video.png"
+		}
+	},
+	"firstSceneId":"mirador_center",
+	"scenes":[
+		{
+			"id":"mirador_center",
+			"photopanos":[
+				{
+					"src":"mirador/1.Mirador_centro.jpg",
+					"rotateY":-100,
+					"TranslateX":30
+				}
+			],
+			"navs":[
+				{
+					"to":"mirador_river",
+					"txt":"Ver rio Magdalena",
+					"fontSize": 0.30,
+					"rotateY":100,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},	
+				{
+					"to":"mirador_background",
+					"txt":"Fondo del mirador",
+					"fontSize": 0.30,
+					"rotateY":-150,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 1.0,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},			
+				{
+					"to":"auditorio",
+					"txt":"Salir",
+					"rotateY":10,
+					"rotateZ":20,
+					"iconTranslateX":1.5,
+					"iconTranslateY": 0.5,
+					"iconTranslateZ":-30,
+					"icon":"icons/salir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]			
+		},
+		{
+			"id":"mirador_river",
+			"photopanos":[
+				{
+					"src":"mirador/2.Mirador_rio.jpg",
+					"rotateY":-40,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"mirador_center",
+					"txt":"Centro del mirador",
+					"fontSize": 0.30,
+					"rotateY":150,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"mirador_background",
+					"txt":"Fondo del mirador",
+					"fontSize": 0.30,
+					"rotateY":100,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}
+			]
+		},
+		{
+			"id":"mirador_background",
+			"photopanos":[
+				{
+					"src":"mirador/3.Mirador_fondo.jpg",
+					"rotateY":-70,
+					"TranslateX":120
+				}
+			],
+			"navs":[
+				{
+					"to":"mirador_center",
+					"txt":"Centro del mirador",
+					"fontSize": 0.30,
+					"rotateY":-35,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				},
+				{
+					"to":"mirador_river",
+					"txt":"Ver rio Magdalena",
+					"fontSize": 0.30,
+					"rotateY":20,
+					"rotateZ":20,
+					"iconTranslateX":0.5,
+					"iconTranslateY": 0.2,
+					"iconTranslateZ":-10,
+					"icon":"icons/ir.png",
+					"iconWidth":1.5,
+					"iconHeight":1.5,
+					"nextRotateY":-530
+				}				
+			]
+		}
+	]
+}
+
+
+
+
